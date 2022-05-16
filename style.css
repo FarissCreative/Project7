@@ -1,51 +1,270 @@
-/*@@charset "UTF-8";
-/* CSS Document*/
+/*
+Theme Name: Template
+Text Domain: FarissTemplate
+Version: 1.0
+Description: wordpress template from scratch 
+Tags: wordpress-template, responsive, blog
+Author: Nadin Fariss
+Author URI: https://blog.fariss.dk
+*/
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #183C33;
+    --pink: #ee3577;
+    --red: #dc3545;
+    --orange: #f68e62;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #767575;
+    --gray-dark: #434242;
+    --primary: #173A31;
+    --secondary: #4f4f4f;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #c2c2c2;
+    --lightgray: #eeeeee;
+    --dark: #434242;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    /* Font Sizes */
+    --font-normal: 1em;
+    --font-small: 0.8125rem;
+    /* Sidebar */
+    --sidebar-width: 100%;
+    --content-max-width: 860px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box
+}
+
+html {
+    line-height: 1.15;
+}
+body {
+    color: var(--secondary);
+    overflow-x: hidden
+}
+
+
+a{
+    color: var(--white);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: rgb(0, 0, 0);
+    
+}
+
+.navbar{
+    background-color: #173A31;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 0 0 200px;
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+    
+  }
+  
+  li a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    padding:  35px 15px;
+    text-align: center;
+
+  }
+
+  /*logo image*/
+  .logo{
+    margin-top: 15px;
+    margin-left: 10px;
+    max-height: 100px;
+    max-width: 200px;
+}
+
+.wp-block-button__link {
+    width: 100%;
+  border: 2px solid white;
+  background-color: #173A31;
+  color: white;
+  padding: 5px;
+   border-radius: 0px;
+  text-align: center;
+  text-decoration: none;
+  word-break: break-word;
+  box-sizing: border-box;
+}
+  /*phjone number*/
+.phonenumber{
+    color: white;
+}
+
+.bookbtn{
+width: 100%;
+border-color: white;
+background-color: #173A31;
+color: white;
+padding: 5px;
+}
+
+.book{
+    display : flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 
 /*
-Theme Name: Hotel Villa Gulle
-Author: Jonna Matras Hansen
-Author URI: http://Matras.dk
-Description: mit første tema. Grineren
-Version: 0.1
+.main-wrapper {
+    margin-left: var(--sidebar-width);
+    background: #fff;
+}
+
+.main-wrapper .container {
+    max-width: var(--content-max-width);
+}
+.page-title {
+    position:sticky;
+    top:0;
+    z-index:9999;
+    transition:all .2s;
+}
+.sticky{
+    padding:1em 0 !important;
+}
+.page-title .heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color:white;
+}
+
 */
 
 
-
-body {
-  background-color: #FFFFFF;
-  color:#16372E;
-}
-
-h1{
-  color: #FFFFCC;
-}
-
-
-.page-articles{
-	max-width: 1280px;
-	margin: 0 auto;
-  background-color: pink;
-}
-
-.page-articles h2.page-title{
-	color: #FFFFFF;
-	font-size: 32px;
-	font-weight: bold;
-	margin-top: 20px;
-	background-color: #16372E;
-}
-
-.post-content {
-	max-width: 390px;
-	display: inline-table;
-	margin: 30px 10px 100px 10px;
-}
-
-.section-title{
-	text-align: center;
-}
-
-.wp-post-image{
-  max-width: 390px;
-  max-height: 250px;
-}
+/*-- footer--*/
+:root{
+    --green: #173A31;
+    --gold: #CDC28B;
+    --white: #f7f8f8;
+    --grey: #DBDBDB;
+  
+    font-size: 20px;
+    font-family: Cormorant Garamond, bold;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer{
+    height: auto;
+    background-color: var(--green);
+    color: white;
+  }
+  
+  
+  .container5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .footer-boksen{
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    margin: 5px 27px 5px 27px;
+    padding-bottom: 10px;
+  }
+  
+  .footer-boksen .illustration{
+    height: 100px;
+    length: 300px;
+    margin-top: 25px;
+  }
+  
+  .footer-boksen h4{
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-boksen p{
+    font-size: 12px;
+    line-height: 20px;
+  }
+  
+  
+  .link{
+    display: inline-block;
+    position: relative;
+    color: var(--white);
+    text-decoration: none;
+  }
+  
+  .link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--white);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .footer-boksen .footer-knap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 25px;
+    width: 100%;
+    border: 1px;
+    border-style: solid;
+    border-color: #f7f8f8;
+    cursor: pointer;
+    font-size: 12px;
+    background-color: var(--green);
+    color: var(--white);
+  }
+  /* footer */

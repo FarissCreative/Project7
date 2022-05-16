@@ -1,0 +1,70 @@
+a{
+    color: var(--white);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: black;
+    
+}
+
+.navbar{
+    background-color: #173A31;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 0 0 200px;
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+    
+  }
+  
+  li a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    padding:  35px 15px;
+    text-align: center;
+
+  }
+
+  /*logo image*/
+  .logo{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+    max-width: 200px;
+}
+  /*phjone number*/
+.phonenumber{
+    color: white;
+}
+
+.bookbtn{
+width: 100%;
+border-color: white;
+background-color: #173A31;
+color: white;
+padding: 5px;
+}
+
+.book{
+    display : flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

@@ -1,78 +1,57 @@
-<?php
-/**
- * The template for displaying the footer
- *
- * Contains the closing of the #content div and all content after.
- *
+<footer class="container5">
 
- *
- */
+	<div class="footer-boksen">
 
-?>
-			</main><!-- #main -->
-		</div><!-- #primary -->
-	</div><!-- #content -->
+	<?php
+	if(is_active_sidebar('footer-1')){
+	dynamic_sidebar('footer-1');
+	}
+	?>
+	</div>
 
-	<?php get_template_part( 'template-parts/footer/footer-widgets' ); ?>
 
-	<footer id="colophon" class="site-footer">
 
-		<?php if ( has_nav_menu( 'footer' ) ) : ?>
-			<nav aria-label="<?php esc_attr_e( 'Secondary menu', 'twentytwentyone' ); ?>" class="footer-navigation">
-				<ul class="footer-navigation-wrapper">
-					<?php
-					wp_nav_menu(
-						array(
-							'theme_location' => 'footer',
-							'items_wrap'     => '%3$s',
-							'container'      => false,
-							'depth'          => 1,
-							'link_before'    => '<span>',
-							'link_after'     => '</span>',
-							'fallback_cb'    => false,
-						)
-					);
-					?>
-				</ul><!-- .footer-navigation-wrapper -->
-			</nav><!-- .footer-navigation -->
-		<?php endif; ?>
-		<div class="site-info">
-			<div class="site-name">
-				<?php if ( has_custom_logo() ) : ?>
-					<div class="site-logo"><?php the_custom_logo(); ?></div>
-				<?php else : ?>
-					<?php if ( get_bloginfo( 'name' ) && get_theme_mod( 'display_title_and_tagline', true ) ) : ?>
-						<?php if ( is_front_page() && ! is_paged() ) : ?>
-							<?php bloginfo( 'name' ); ?>
-						<?php else : ?>
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-						<?php endif; ?>
-					<?php endif; ?>
-				<?php endif; ?>
-			</div><!-- .site-name -->
+	<div class="footer-boksen">
 
-			<?php
-			if ( function_exists( 'the_privacy_policy_link' ) ) {
-				the_privacy_policy_link( '<div class="privacy-policy">', '</div>' );
-			}
-			?>
+	<?php
+	if(is_active_sidebar('footer-2')){
+	dynamic_sidebar('footer-2');
+	}
+	?>
+	</div>
 
-			<div class="powered-by">
-				<?php
-				printf(
-					/* translators: %s: WordPress. */
-					esc_html__( 'Proudly powered by %s.', 'twentytwentyone' ),
-					'<a href="' . esc_url( __( 'https://wordpress.org/', 'twentytwentyone' ) ) . '">WordPress</a>'
-				);
-				?>
-			</div><!-- .powered-by -->
 
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+	<div class="footer-boksen">
 
-</div><!-- #page -->
+	<?php
+	if(is_active_sidebar('footer-3')){
+	dynamic_sidebar('footer-3');
+	}
+	?>
+	</div>
 
-<?php wp_footer(); ?>
+
+
+	<div class="footer-boksen">
+
+	<?php
+	if(is_active_sidebar('footer-4')){
+	dynamic_sidebar('footer-4');
+	}
+	?>
+
+
+	</div>
+
+         
+</footer>
+
+
+ 
+ <?php
+    wp_footer(); // wordpress gonna inject the files it needs for the page by itself from functions php file.
+    ?>  
+
 
 </body>
-</html>
+</html> 
