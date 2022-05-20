@@ -360,3 +360,112 @@ footer {
 }
 
 /* footer */
+
+.wp-block-button__link {
+  width: 100%;
+border: 2px solid white;
+background-color: #173A31;
+color: white;
+padding: 7px 50px;
+border-radius: 0px;
+text-align: center;
+text-decoration: none;
+word-break: break-word;
+box-sizing: border-box;
+margin-top: 30px;
+}
+.wp-block-columns h2{
+background-color: #173A31;
+color: white;
+margin-top: 70px
+}
+
+.wp-block-columns img{
+max-width: 390px;
+max-height: 250px;
+}
+
+
+.wp-block-social-link-anchor{
+border-radius: 0px;
+background-color: #173A31;
+font-size: 40px;
+
+}
+
+.wp-block-columns {
+ max-width: 1280px;
+margin: 0 auto;
+}
+
+
+/* for the shortcuts*/
+.wp-container-1 {
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+.wp-container-2 {
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+.wp-container-3 {
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+.focus-content-outer {
+margin-top : 200px;
+margin-bottom : 100px;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.focus-content-inner {
+max-width: 1000px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.focus-content-title {
+margin-bottom : 20px;
+color: #173A31;
+}
+
+
+
+
+.focus-content-img {
+margin-right : 20px;
+}
+
+.footer-boksen h2{
+color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+color: var(--green);
+
+}
+
+
+a {
+color: #ffffff;
+text-decoration: none;
+}
