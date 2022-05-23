@@ -20,6 +20,7 @@ $returning_visitor = false;
 //makes a cookie user ( with a limit in a week calculated in seconds)
 if (!isset($_COOKIE['bruger'])) {
 	setcookie('bruger', 'examtest', time() + 7 * 86400);
+    //chance the key and value to get different greating respondses. 
 } else {
 	$returning_visitor = true;
 }
